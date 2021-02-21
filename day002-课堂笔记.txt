@@ -38,8 +38,71 @@
 				......
 			- 只要有一个分支执行；整个if语句全部结束
 			- 只要一条java语句；大括号可以省略(一般不建议 )
-			- swith
+		- switch
+			- switch语句属于选择语句，为分支语句
+			- switch语句的语法结构
+				switch(int或String类型的字面值或变量){
+					case int或String类型的字面值或变量:
+						java语句;
+						......
+						break;
+					case int或String类型的字面值或变量:
+						java语句;
+						......
+						break;
+					case int或String类型的字面值或变量:
+						java语句;
+						......
+						break;
+					case int或String类型的字面值或变量:
+						java语句;
+						......
+						break;
+					......
+					default:
+						java语句;
+						......
+				}
+			- swich语句的执行原理；
+				- switch后面小括号当中的"数据"和case后面的"数据"进行一一匹配；匹配成功的分支执行
+			- 匹配成功的分支执行，分支当中有"break"语句的话；整个swith语句终止
+			- 匹配成功的分支执行，分支当中没有"break"语句的话；直接进入下一个分支执行（不进行匹配）
+			- 当所有分支没有匹配成功，当有default语句，执行default语句
+			- switch后面和case后面只能是int或者String类型的数据，不能说探测其他类型
+				- 当然byte，short，char也可以直接写到switch和case后面，因为他们可以自动类型转换
+			- case语句可以合并
 
 	- 循环语句
+		- for
+			- 表达式
+				for(初始化表达式;布尔表达式;更新表达式){
+					java语句;
+					......
+				}
+			- 初始化表达式只执行一次
+			- 条件表达式结果必须一个布尔类型，也就是true或false
+		- while
+			- while语法机制：
+				while (布尔表达式){
+					循环体;
+				}
+			- 执行原理：
+				如果为true就执行循环体，循环之后，再次判断布尔表达式的结果，如果为真继续执行；直到布尔表达式为false位置；while循环结束
+				for和while完全可以可以互换，只不过语法格式不同
+		- do..ehile
+			- 语法机制：
+				do {
+					循环体;
+				}while(布尔表达式);
+			-执行原理：
+				先执行循环体代码；执行之后再判断布尔表达式的结果，结果为true；继续循环，结果为false；循环结束
 
 	- 控制循环语句
+		- break
+			- break语句比较特殊 一个单词成为一个java语句
+			- 翻译为折断/打断
+			- break语句用在两个位置
+				- switch语句当中，用来终止switch语句执行
+				- break语句在循环语句当中；用来阻止循环执行
+		- continue
+		- return
