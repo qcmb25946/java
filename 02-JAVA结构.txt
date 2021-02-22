@@ -1,0 +1,17 @@
+public	公开的
+class	类
+public class 文件名(类名){
+	类体
+	static	静态的
+	void	空
+	main	方法名
+	(String[] args)		main方法的形式参数列表
+	args	变量名
+	public static void main(String[] args){
+	程序内容
+		System.out.println("hello world!");
+	}
+}
+public class	一个源文件只能定义一个类名与文件名相同
+class		一个源文件可以定义无数类名 一个class会生成一个.class文件
+每个class当中可以编写main方法 都可以设置程序入口

@@ -1,0 +1,11 @@
+DOS命令：
+1.exit	退出命令窗口
+2.cls	清屏
+3.dir	列出当前路径内容
+4.cd	切换目录
+5.切换盘符	盘符:
+
+java文件必须用.java结尾的扩展名
+
+javac.exe	编译
+java.exe	运行
